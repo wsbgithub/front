@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 后代选择器 */
+    .home span {
+      color: red;
+    }
+
+    /* 子代选择器 */
+    .home>span {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="home">
+    <span class="111">呵呵哒</span>
+    <div class="11">
+      <span class="111">哗啦啦</span>
+      <p>我是P元素</p>
+    </div>
+
+    <div class="2">
+      <div class="22">
+        <p>
+          <span class="222">呼啦啦</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <span>嘻嘻嘻</span>
+  <div>
+    <span>嘿嘿嘿</span>
+  </div>
+</body>
+
+</html>

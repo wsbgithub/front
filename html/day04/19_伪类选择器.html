@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 我访问过的 */
+    a:link {
+      color: blue;
+
+    }
+
+    /*已经访问过后*/
+    a:visited {
+      color: rgb(255, 0, 0);
+
+    }
+
+    /* a/input获取焦点的时间的状态  tab在上面的时候 */
+    a:focus {
+      color: purple
+    }
+
+    /*鼠标悬浮上去*/
+    a:hover {
+      color: rgb(0, 255, 200);
+
+    }
+
+    /* 鼠标按上去,没松开 */
+    a:active {
+      color: orange
+    }
+  </style>
+</head>
+
+<body>
+  <a href="http://www.stackoverflow.com">stackoverflow</a>
+  <a href="http://www.baidu.com">百度一下</a>
+  <input type="text">
+</body>
+
+</html>

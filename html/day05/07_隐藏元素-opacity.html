@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      background-color: red;
+      color: wheat;
+      width: 200px;
+      height: 200px;
+
+
+    }
+
+    .box2 {
+      background-color: blue;
+      color: wheat;
+      width: 200px;
+      height: 200px;
+      /*  当 opacity 属性的值应用于某个元素上时，是把这个元素（包括它的内容）当成一个整体看待，即使这个值没有被子元素继承。因此，一个元素和它包含的子元素都会具有和元素背景相同的透明度，哪怕这个元素和它的子元素有不同的 opacity 属性值*/
+      opacity: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">我是BOX1</div>
+  <div class="box2">我是BOX2
+    <img src="../img/存储器.png">
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>案例练习</title>
+  <link rel="stylesheet" href="../CSS/reset.css">
+  <style>
+    .item {
+      display: inline-block;
+      width: 234px;
+      height: 300px;
+      background-color: white;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    .item img {
+      width: 160px;
+      height: 160px;
+    }
+
+    .desc {
+      color: #999;
+      /* 单行显示兵欠佳省略号 */
+      white-space: nowrap;
+      /* 显示 */
+      text-overflow: ellipsis;
+      overflow: hidden;
+      /* display: -webkit-box;
+      /* 它只有在 display 属性设置成 -webkit-box 或者 -webkit-inline-box 并且 box-orient 属性设置成 vertical时才有效果。在大部分情况下，
+      也需要设置 overflow 属性为 hidden，否则，里面的内容不会被裁减，并且在内容显示为指定行数后还会显示省略号。*/
+      /* -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;  */
+    }
+
+    .price {
+      margin-top: 10px;
+    }
+
+    .price .new_price {
+      color: #ff6700;
+    }
+
+    .old_price {
+      color: #999;
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+
+<body>
+  <a class="item"
+    href="https://www.mi.com/prod/xiaomi-pad-7-pro?g_utm=Thirdparty.Baidu.ProductUnion.BrandZone-Baidu-PC.Brand-A-851">
+    <div>
+      <img src="../img/xm01.png" alt="平板">
+    </div>
+    <span>小米5 pro</span>
+    <p class="desc">12.1英寸2.5K旗舰机大屏 | 10000mAh超大电池 | Xiaomi HyperOS 流畅体验 | 全套生态配件 | 小米教育中心</p>
+    <div class="price">
+      <span class="new_price">2399元起</span>
+      <span class="old_price">2499元</span>
+    </div>
+  </a>
+
+</body>
+
+</html>
