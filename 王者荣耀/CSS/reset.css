@@ -1,0 +1,16 @@
+/* 重置样式 */
+body, H2 {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    /* 丢掉下划线 */
+    text-decoration: none;
+    color: #333
+}
+
+img{
+    /*vertical-align 属性用来指定行内（inline）、行内区块（inline-block）、表格单元格（table-cell）盒子的垂直对齐方式。*/
+    vertical-align: middle;
+}
