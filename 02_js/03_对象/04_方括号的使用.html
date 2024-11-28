@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var obj = {
+      name: '张三',
+      'my frend': {
+        name: '小李',
+      },
+      'eating something': function () {
+        console.log('eating something')
+      }
+    }
+
+    console.log(obj['my frend'].name)
+    obj['eating something']()
+    var eat ='eating something'
+    obj[eat]()
+    obj.eat()
+
+  </script>
+</body>
+
+</html>

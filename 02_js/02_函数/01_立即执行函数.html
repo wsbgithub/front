@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Document</title>
+  <style></style>
+
+</head>
+<body>
+<script>
+  //普通函数
+  function foo() {
+    console.log('foo函数被执行了')
+  }
+
+  foo();
+  foo();
+  //定义函数,定义完这个函数之后,会要求这个函数立即被执行
+  var result = (function (name) {
+    console.log('这个函数立即被执行了', name)
+    return 'hello world' + name;
+  })("wsb");
+  console.log(result)
+
+</script>
+</body>
+</html>

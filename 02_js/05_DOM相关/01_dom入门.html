@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="box">
+    <h1>我是标题</h1>
+    <p>我是内容</p>
+  </div>
+
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+  </ul>
+</body>
+<script>
+  var boxDiv = document.body.children[0]
+  boxDiv.style.color = 'red'
+  console.log(document.body.children[0])
+  boxDiv.children[0].nextElementSibling.style.color = 'blue'
+  boxDiv.children[0].style.color = 'yellow'
+</script>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 函数中是有一个this指向，默认指向window对象
+    //情况1:如果是普通的函数被默认调用，那么this指向window对象
+    function foo(name, age) {
+      console.log(this)
+    }
+    foo('小王', 18)
+
+    // 情况2:通过对象调用，那么this指向对象本身
+    var obj = {
+      name: '小李',
+      age: 18,
+      far: function () {
+        console.log(this)
+      }
+    }
+
+    obj.far() // this指向obj对象本身
+    var fn = obj.far
+    fn() // this指向window对象
+
+
+    var obj2 = {
+      name: '小汪',
+      age: 18,
+      far: function () {
+        console.log("外层的this:", this)
+        // this指向obj2对象本身
+        return function () {
+          // this指向window对象
+          console.log("内 层的this:", this)
+        }
+      }
+    }
+    obj2.far()()
+  </script>
+</body>
+
+</html>

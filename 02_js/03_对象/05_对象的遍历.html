@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    var info = {
+      name: '张三',
+      age: 18,
+      sex: '男',
+      hobby: ['吃饭', '睡觉', '打豆豆']
+    }
+    var infoKeys = Object.keys(  )
+    // 遍历对象
+    // for in 遍历对象
+    for (var key in info) {
+      debugger
+      var value = info[key]
+      console.log("key:", key, "value:", value)
+    }
+
+    // for of 默认不能遍历对象
+    // forEach 遍历数组
+    // forEach 遍历对象
+    // Object.keys() 遍历对象
+    for (var i = 0; i < infoKeys.length; i++) {
+      var key = infoKeys[i]
+      var value = info[key]
+      console.log("key:", key, "value:", value)
+    }
+    // Object.values() 遍历对象
+    // Object.entries() 遍历对象
+    // Object.assign() 遍历对象
+    // Object.getOwnPropertyNames() 遍历对象
+
+
+  </script>
+</body>
+  

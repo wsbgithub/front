@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var info = {
+
+      name: "wsb",
+      age: 18,
+      friend: {
+        name: "kobe",
+        age: 30
+
+      },
+      running: function () {
+        console.log("running")
+      }
+    }
+    console.log(info.name)
+    info.running()
+    console.log(info.friend.name)
+
+    console.log(info.age)
+    info.age = 19
+    console.log(info.age)
+    console.log(info.leight)
+
+    info.leight = 180
+    console.log(info.leight)
+
+    info.study = function () {
+      console.log("studying")
+    }
+    info.study()
+    //删除对象属性
+    delete info.age
+    console.log(info)
+
+  </script>
+</body>
+
+</html>

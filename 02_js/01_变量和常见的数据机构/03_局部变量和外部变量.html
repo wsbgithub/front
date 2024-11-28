@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Document</title>
+  <style></style>
+
+</head>
+<body>
+<script>
+
+  //全局作用域 ：整个script标签都可以使用的变量
+
+  var message = "hello world";
+
+  function sayHello() {
+    console.log("message:", message);
+  }
+
+  {
+    //ES5之前没有块级作用域的,var定义的变量没有块级作用域
+    var count = 100;
+    console.log("count1:", count)
+  }
+  sayHello();
+  console.log("count2:", count)
+
+
+  for (var i = 0; i < 3; i++) {
+    var foo = "foo";
+  }
+  console.log("foo:", foo)
+  console.log("i:", i)
+
+  //ES5之前函数代码块会形成自己的作用域
+  //在函数内部定义的变量外面是访问不到的
+  function test() {
+    var bar = "bar";
+    console.log("bar1:", bar)
+  }
+
+  test();
+  console.log("bar2:", bar)
+
+
+</script>
+</body>
+</html>
