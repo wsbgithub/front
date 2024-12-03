@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Document</title>
+  <style></style>
+
+</head>
+
+<body>
+  <div id="abc" class="box" title="标题" age="18"></div>
+  <input type="checkbox" class="checkbox" checked>web前端</input>
+  账号:<input type="text" class="input">
+
+  <button class="btn">按钮</button>
+</body>
+
+
+<script>
+  var obj = {
+    name: 'why',
+  }
+
+
+  var boxEl = document.querySelector('.box')
+  console.log(boxEl.id, boxEl.title, boxEl.age)//abc 标题 undefined
+  var boxEl = document.querySelector('input')
+  console.log(boxEl.checked) //true
+  console.log(typeof boxEl.checked) //boolean
+
+
+  //attribute和property是相互影响的 属性是字符串类型 
+
+
+  var inputEl = document.querySelector('.input')
+
+
+
+  inputEl.setAttribute('value', 'w3213232132')
+  var btnEl = document.querySelector('.btn')
+
+  btnEl.onclick = function () {
+    inputEl.value = 'wsb'  //优先级比较高 
+
+    inputEl.setAttribute('value', 'w3213232132')
+  }
+
+
+</script>
+</script>
+
+</html>

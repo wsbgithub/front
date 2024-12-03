@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="box" class="box" title="box" age="18" height="18.8"></div>
+  <input type="checkbox" checked>web前端</input>
+</body>
+<script>
+  // 获取元素
+  var box = document.getElementById('box')
+  // 获取元素属性
+  // 1.获取元素属性值
+  var val = box.getAttribute('title')
+  // 2.获取元素属性值(返回值) 
+  console.log("title:" + val)
+  // 3.设置元素属性值
+  box.setAttribute('title', 'newTitle')
+
+  console.log(box.getAttribute('title'))
+
+  // 4.删除元素属性
+  box.removeAttribute('title')
+  // 5.判断元素是否拥有某个属性
+  var has = box.hasAttribute('title')
+  console.log(has)
+  // 6.获取元素属性集合
+  var attrs = box.attributes
+  for (const element of attrs) {
+    console.log(element);
+  }
+  // 7.获取元素自定义属性
+  var age = box.getAttribute('age')
+  console.log("age:" + age)
+
+  var box = document.querySelector('input')
+  console.log("checked:" + box.getAttribute('checked'))
+
+
+
+
+
+</script>
+
+</html>
