@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Document</title>
+  <style></style>
+
+</head>
+<body>
+<button class="set">取消set</button>
+<button class="int">取消int</button>
+<script>
+  var setTimeoutId = setTimeout(function () {
+    console.log('setTimeout')
+  }, 3000)
+
+  var setIntervalId = setInterval(function () {
+    console.log('setIntervalId')
+  }, 3000)
+
+
+ var selEl= document.querySelector('.set')
+ var intEl= document.querySelector('.int')
+
+  selEl.onclick = function () {
+    console.log('取消setTimeout')
+    clearTimeout(setTimeoutId)
+  }
+  intEl.onclick = function () {
+    console.log('取消setInterval')
+    clearInterval(setIntervalId)
+  }
+
+</script>
+</body>
+</html>

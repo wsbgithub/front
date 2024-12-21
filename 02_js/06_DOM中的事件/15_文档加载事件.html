@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+
+</head>
+<body>
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    var imgEl = document.querySelector("img")
+    console.log(imgEl.offsetHeight, imgEl.offsetWidth)
+  })
+  window.onload = function () {
+    var divEl = document.querySelector(".box")
+    var imgEl = document.querySelector("img")
+    divEl.style.backgroundColor = "red"
+    console.log(imgEl.offsetHeight, imgEl.offsetWidth)
+  }
+</script>
+
+<div class="box"></div>
+<img alt="" src="../img/image.png">
+</body>
+</html>

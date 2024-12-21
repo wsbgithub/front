@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+    }
+  </style>
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+</body>
+<script>
+  var divEl = document.querySelector('.box')
+
+  divEl.onclick = function (event) {
+    console.log('鼠标点击事件')
+  }
+  var flag = null;
+  divEl.onmousedown = function (event) {
+    console.log('鼠标按下事件')
+    flag = true
+  }
+  divEl.onmouseup = function (event) {
+    flag = false
+    console.log('鼠标松开事件')
+  }
+
+  divEl.oncontextmenu = function (event) {
+    event.preventDefault()
+    console.log('鼠标右击事件')
+  }
+
+  divEl.onmousemove = function (event) {
+    if (flag) {
+      console.log('鼠标移动事件')
+    }
+
+  }
+</script>
+
+</html>

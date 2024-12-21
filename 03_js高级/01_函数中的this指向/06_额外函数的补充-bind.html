@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function foo(name, age, address) {
+      console.log("foo函数", this)
+      console.log('参数', name, age, address )
+    }
+
+
+    var obj = {
+      name: 'why'
+    }
+
+
+    var bar = foo.bind(obj, 'wsb', 18)  //返回一个函数
+    bar()
+    bar('sh')
+    bar()
+    bar()
+
+
+  </script>
+</body>
+
+</html>

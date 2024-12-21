@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="box">
+    <button data-act="new">new</button>
+    <button data-act="delete">delete</button>
+    <button data-act="uodate">uodate</button>
+  </div>
+</body>
+
+
+<script>
+  var boxEl = document.querySelector('.box')
+  boxEl.onclick = function (event) {
+    var action = event.target.dataset.act
+    switch (action) {
+      case 'new':
+        console.log('新增')
+        break
+      case 'delete':
+        console.log('删除')
+        break
+      case 'uodate':
+        console.log('修改')
+        break
+      default:
+        console.log('无效操作')
+        break;
+    }
+  }
+</script>
+
+</html>

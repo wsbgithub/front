@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box span {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box"">
+    <span >
+      <button class=" btn">点我</button>
+    </span>
+  </div>
+  <script>
+    var spanEl = document.querySelector('span')
+    var boxEl = document.querySelector('.box')
+    var btnEl = document.querySelector('.btn')
+
+    btnEl.addEventListener('click', function () {
+      console.log('btnEl冒泡事件被执行')
+      event.stopPropagation()
+    })
+    spanEl.addEventListener('click', function (event) {
+      console.log('span冒泡事件被执行')
+
+    })
+    boxEl.addEventListener('click', function () {
+      console.log('boxEl冒泡事件被执行-')
+    })
+
+    btnEl.addEventListener('click', function () {
+      console.log('btnEl捕获事件被执行+')
+    }, true)
+    spanEl.addEventListener('click', function () {
+      console.log('span捕获事件被执行+')
+    }, true)
+    boxEl.addEventListener('click', function () {
+      console.log('boxEl捕获事件被执行+')
+    }, true)
+
+  </script>
+</body>
+
+</html>

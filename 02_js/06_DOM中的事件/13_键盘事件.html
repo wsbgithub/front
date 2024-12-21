@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Document</title>
+  <style></style>
+
+</head>
+<body>
+<input class="input" type="text">
+<input class="input2" type="text">
+<button class="btn">按钮</button>
+<script>
+
+
+  var inputEl = document.querySelector(".input")
+  var btnEl = document.querySelector(".btn")
+
+  inputEl.onkeyup = function (event) {
+    console.log("onkeyup " + event.key + " " + event.code)
+  }
+
+  inputEl.onkeydown = function (event) {
+    console.log("onkeydown " + event.key + " " + event.code)
+  }
+
+  inputEl.onkeypress = function (event) {
+    console.log("onkeypress " + event.key + " " + event.code)
+  }
+
+  btnEl.onclick = function (event) {
+    console.log(inputEl.value)
+  }
+
+  inputEl.onkeyup = function (event) {
+    if (event.key === "Enter") {
+      console.log("进行搜索 " + this.value)
+
+    }
+  }
+  document.onkeyup = function (event) {
+    console.log(event.key)
+    if (event.key === "s") {
+      inputEl.focus()
+    }
+
+  }
+
+</script>
+</body>
+</html>

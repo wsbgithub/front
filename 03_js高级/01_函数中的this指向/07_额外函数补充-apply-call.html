@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function foo(name, age) {
+      console.log("foo函数", this, name, age)
+    }
+
+    foo()
+    /**
+     * call和apply都是函数的方法，但是call和apply的参数不一样，call是传参，apply是传数组
+     * 第一个参数绑定this
+     * 第二个参数开始，是传参 apply 参数以数组传入
+     */
+    foo.call(123, 'db', 19)
+    foo.apply(123, ['wsb', 18])
+  </script>
+</body>
+
+</html>

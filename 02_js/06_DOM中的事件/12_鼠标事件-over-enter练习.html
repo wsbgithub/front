@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+    }
+  </style>
+
+</head>
+<body>
+<div class="box">
+  <button>新增</button>
+  <button>删除</button>
+  <button>搜索</button>
+</div>
+<script>
+
+  var boxEl = document.querySelector('.box')
+  boxEl.onmouseenter = function (event) {
+    console.log(event.target.textContent + "onmouseenter")
+  }
+  //支持冒泡  子类事情可以委托让父类处理
+  boxEl.onmouseover = function (event) {
+    if (event.target.tagName === 'BUTTON') {
+      console.log(event.target.textContent + "onmouseover")
+    }
+  }
+
+
+</script>
+</body>
+</html>

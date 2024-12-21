@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box span {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+    }
+  </style>
+
+</head>
+<body>
+<div class="box">
+  <span></span>
+</div>
+
+<script>
+  const box = document.querySelector('.box')
+  const spanElement = document.querySelector('span')
+  //  mouseenter  mouseleave  1 不支持冒泡   2 进入子元素依然属于该元素内,没有任何反应  3 不能进行实践委托
+  box.onmouseenter = function (event) {
+    console.log(event.currentTarget.tagName + " enter事件")
+  }
+
+  box.onmouseleave = function (event) {
+    console.log(event.currentTarget.tagName + " leave事件")
+  }
+
+  spanElement.onmouseenter = function (event) {
+    console.log(event.currentTarget.tagName + " enter事件")
+  }
+  spanElement.onmouseleave = function (event) {
+    console.log(event.currentTarget.tagName + " leave事件")
+  }
+
+</script>
+</body>
+</html>

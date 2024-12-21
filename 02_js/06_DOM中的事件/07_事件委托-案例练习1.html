@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .active {
+      color: white;
+      background-color: brown;
+    }
+
+    .active1 {
+      color: white;
+      background-color: blue;
+    }
+
+    .active2 {
+      color: white;
+      background-color: orange;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+  </ul>
+</body>
+<script>
+  var liEls = document.querySelectorAll('li')
+
+  //1每个li自己监听自己的clicik事件
+  // liEls.forEach(item => {
+  //   item.onclick = function () {
+  //     item.classList.add("active1")
+  //   }
+  // })
+  // for (let i = 0; i < liEls.length; i++) {
+  //   liEls[i].onclick = function () {
+  //     liEls[i].classList.add("active2")
+  //   }
+  // }
+  // for (var element of liEls) {
+  //   element.onclick = function (event) {
+  //     event.currentTarget.classList.add("active")
+  //   }
+  // }
+
+  // for (var element of liEls) {
+  // element.onclick = function (event) {
+  //   this.classList.add("active") 
+  // }
+  // }
+
+  //li click事件委托给ul 
+
+  // document.querySelector('ul').onclick = function (event) {
+  //   var activeClass = document.querySelector(".active")
+  //   activeClass && activeClass.classList.remove("active")
+  //   event.target.classList.add("active")
+  // }
+
+  //方式二
+
+  activeLiEl = null
+
+  document.querySelector('ul').onclick = function (event) {
+
+    if (activeLiEl && activeLiEl !== event.target && event.target.tagName.toLowerCase() === 'li') {
+      activeLiEl.classList.remove("active")
+    }
+    if (event.target.tagName.toLowerCase() !== 'li') {
+      return
+    }
+    event.target.classList.add("active")
+    activeLiEl = event.target
+  }
+
+
+</script>
+
+</html>

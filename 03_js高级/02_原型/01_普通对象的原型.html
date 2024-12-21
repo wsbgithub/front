@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Document</title>
+  <style></style>
+
+</head>
+<body>
+<script>
+  var obj = {
+    name: 'wsb',
+    age: 18
+  }
+  console.log(obj)
+  console.log(obj.__proto__)
+  console.log(Object.getPrototypeOf(obj))
+  console.log(Object.getPrototypeOf(obj) === obj.__proto__);
+  console.log(Object.getPrototypeOf(obj) === Object.prototype);
+</script>
+</body>
+</html>

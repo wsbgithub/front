@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button id="btn">点我</button>
+  <script>
+    function foo() {
+      console.log(this + "事件监听到了")
+    }
+
+    var btnEl = document.getElementById('btn')
+    btnEl.addEventListener('click', foo);
+    setTimeout(function () {
+      console.log('5s后移除了事件')
+      btnEl.removeEventListener('click', foo)
+    }, 5000)
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 1. 创建一个空的事件对象
+    var event = new Event('wsbEvent')
+    // 2. 监听事件
+    document.body.addEventListener('wsbEvent', function () {
+      console.log('wsbEvent触发了')
+    })
+    document.body.addEventListener('wsbEvent2', function () {
+      console.log('wsbEvent2触发了')
+    })
+    setTimeout(() => {
+      // 3. 触发事件
+      console.log('触发了')
+      document.body.dispatchEvent(event)
+    }, 5000);
+  </script>
+  </script>
+</body>
+
+</html>

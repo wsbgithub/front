@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 1.普通函数调用，this指向window
+    function foo() {
+      console.log("foo", this)
+    }
+    foo()
+
+    var obj = {
+      name: 'wsb',
+      // 2.对象方法调用，this指向对象
+      bar: function () {
+        console.log("bar", this)
+      }
+    }
+
+    var bar = obj.bar
+    console.log(bar())
+
+    console.log(obj.bar())
+
+    function test(fn) {
+      fn()
+    }
+
+    test(obj.bar)
+
+
+
+  </script>
+</body>
+
+</html>

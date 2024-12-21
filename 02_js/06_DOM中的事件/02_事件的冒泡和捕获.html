@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box span {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      color: white;
+    }
+  </style>
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <span></span>
+  </div>
+
+  <script>
+    var spanEl = document.querySelector('span')
+    var boxEl = document.querySelector('.box')
+    var bodyEl = document.body
+
+    spanEl.onclick = function () {
+      console.log('span函数被执行*')
+    }
+    boxEl.onclick = function () {
+      console.log('box函数被执行*')
+    }
+
+    bodyEl.onclick = function () {
+      console.log('body函数被执行*')
+    }
+
+    spanEl.addEventListener('click', function () {
+      console.log('span事件被执行-')
+    })
+    boxEl.addEventListener('click', function () {
+      console.log('boxEl事件被执行-')
+    })
+    bodyEl.addEventListener('click', function () {
+      console.log('bodyEl事件被执行-')
+    })
+    spanEl.addEventListener('click', function () {
+      console.log('span事件被执行+')
+    }, true)
+    boxEl.addEventListener('click', function () {
+      console.log('boxEl事件被执行+')
+    }, true)
+    bodyEl.addEventListener('click', function () {
+      console.log('bodyEl事件被执行+')
+    }, true)
+
+
+
+  </script>
+</body>
+
+</html>
