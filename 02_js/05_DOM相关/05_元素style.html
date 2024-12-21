@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Document</title>
+  <style>
+    .box {
+      font-size: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="box" style="background-color: blue; color: white;"> 我是box</div>
+
+  <script>
+
+
+    var boxEl = document.querySelector('.box')
+
+    boxEl.style.backgroundColor = 'red'
+    console.log(boxEl.style)
+    console.log(boxEl.style.backgroundColor)
+
+    boxEl.style.cssText = "background-color:green;color:blue;" //不推荐使用
+
+    //读取style样式
+    console.log(boxEl.style.backgroundColor)
+    console.log("fontSize:" + boxEl.style.fontSize)
+    console.log("fontSize2:" + getComputedStyle(boxEl).fontSize)
+
+
+
+
+  </script>
+</body>
+
+</html>

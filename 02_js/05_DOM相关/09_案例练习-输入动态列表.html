@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>动态创建列表</h2>
+  <ul id="list"></ul>
+  <script>
+
+    var listEl = document.getElementById('list')
+    var flag = true
+    while (true) {
+      var mesaage = prompt('请输入mesaage')
+      if (!mesaage) {
+        flag = false
+        break
+      }
+      var liEl = document.createElement('li')
+      liEl.textContent = mesaage
+      listEl.append(liEl)
+    }
+  </script>
+</body>
+
+</html>

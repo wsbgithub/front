@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box span {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+    }
+  </style>
+
+</head>
+<body>
+<div class="box">
+  <span></span>
+</div>
+
+<script>
+  const box = document.querySelector('.box')
+  const spanElement = document.querySelector('span')
+  // over和out事件 1.支持冒泡 2 进入元素的子元素是  先调用父类的mouseout 在调用自子元素的over   3.离开元素的子元素是  先调用子元素的out 在调用父元素的out
+  box.onmouseover = function (event) {
+    console.log(event.currentTarget.tagName + " over事件")
+  }
+
+  box.onmouseout = function (event) {
+    console.log(event.currentTarget.tagName + " out事件")
+  }
+
+  spanElement.onmouseover = function (event) {
+    console.log(event.currentTarget.tagName + " over事件")
+  }
+  spanElement.onmouseout = function (event) {
+    console.log(event.currentTarget.tagName + " out事件")
+  }
+
+</script>
+</body>
+</html>

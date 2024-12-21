@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bbaa0e01-c26f-496f-8584-3b5c1b4ae3d1" name="更改" comment="js">
+      <change beforePath="$PROJECT_DIR$/02_js/05_DOM相关/02_元素property.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EditorConfigPreviewManager">
+    <editorConfig file="$PROJECT_DIR$/.editorconfig" previewFile="$PROJECT_DIR$/CSS/CSS设置背景/01_backgroud-img.html" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/02_js/02_函数中argument变量.html" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2okk4WCbFm3gzXCJEOSTZRnKnMJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.01_立即执行函数.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/coderwhy/王者荣耀&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.file-colors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\coderwhy\王者荣耀" />
+      <recent name="E:\coderwhy\CSS\Flex布局" />
+      <recent name="E:\coderwhy\CSS\元素定位" />
+      <recent name="E:\coderwhy\CSS\高级元素的使用" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\coderwhy\02_js\01_变量和常见的数据机构" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="01_立即执行函数.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/coderwhy/02_js/02_函数/01_立即执行函数.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.01_立即执行函数.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23726.96" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="bbaa0e01-c26f-496f-8584-3b5c1b4ae3d1" name="更改" comment="" />
+      <created>1731420771799</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731420771799</updated>
+      <workItem from="1731420773739" duration="104000" />
+      <workItem from="1731421317820" duration="14000" />
+      <workItem from="1731421796720" duration="6796000" />
+      <workItem from="1731463922106" duration="9444000" />
+      <workItem from="1731503781134" duration="3717000" />
+      <workItem from="1731594520352" duration="3333000" />
+      <workItem from="1731677113596" duration="6838000" />
+      <workItem from="1731717134452" duration="6054000" />
+      <workItem from="1731817663540" duration="19652000" />
+      <workItem from="1732106836146" duration="2125000" />
+      <workItem from="1732193690091" duration="5227000" />
+      <workItem from="1732290128795" duration="4862000" />
+      <workItem from="1732427454487" duration="242000" />
+      <workItem from="1732543659985" duration="8243000" />
+      <workItem from="1732625333569" duration="6452000" />
+      <workItem from="1732633809431" duration="1540000" />
+      <workItem from="1732808453239" duration="131000" />
+      <workItem from="1732808594844" duration="1299000" />
+      <workItem from="1733232658546" duration="1526000" />
+    </task>
+    <task id="LOCAL-00001" summary="table 元素练习">
+      <option name="closed" value="true" />
+      <created>1731428516201</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731428516201</updated>
+    </task>
+    <task id="LOCAL-00002" summary="王者荣耀初始化">
+      <option name="closed" value="true" />
+      <created>1732294941009</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732294941010</updated>
+    </task>
+    <task id="LOCAL-00003" summary="js">
+      <option name="closed" value="true" />
+      <created>1732808490535</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732808490535</updated>
+    </task>
+    <task id="LOCAL-00004" summary="js">
+      <option name="closed" value="true" />
+      <created>1733234562683</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733234562683</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="table 元素练习" />
+    <MESSAGE value="王者荣耀初始化" />
+    <MESSAGE value="js" />
+    <option name="LAST_COMMIT_MESSAGE" value="js" />
+  </component>
+</project>
