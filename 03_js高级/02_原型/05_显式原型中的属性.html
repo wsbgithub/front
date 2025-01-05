@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Document</title>
+  <style></style>
+
+</head>
+<body>
+<script>
+  function Person() {
+  }
+
+  console.log(Person.prototype)
+  console.log(Person.prototype.constructor === Person)  //true
+  let person = new Person();
+  console.log(person.__proto__ === Person.prototype) //true
+  console.log(person.__proto__.constructor=== Person.prototype.constructor) //true
+</script>
+</body>
+</html>
